@@ -1,23 +1,21 @@
 package com.example.dorime;
 
 public class User {
-	private int user_id;
+	private int userId;
 	private String username;
 	private String email;
-	private String password;
-	private int user_type;
+	private int userType;
 	
-	public User(int user_id, String username, String email, String password, int user_type) {
+	public User(int userId, String username, String email, int userType) {
 		super();
-		this.user_id = user_id;
+		this.userId = userId;
 		this.username = username;
 		this.email = email;
-		this.password = password;
-		this.user_type = user_type;
+		this.userType = userType;
 	}
 
-	public int getUser_id() {
-		return user_id;
+	public int getUserId() {
+		return userId;
 	}
 
 	public String getUsername() {
@@ -28,12 +26,9 @@ public class User {
 		return email;
 	}
 
-	public String getPassword() {
-		return password;
-	}
 
-	public int getUser_type() {
-		return user_type;
+	public int getUserType() {
+		return userType;
 	}
 	
 	

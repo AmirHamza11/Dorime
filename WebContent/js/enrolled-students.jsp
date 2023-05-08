@@ -1,11 +1,10 @@
-
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
 
 <!DOCTYPE html>
 <html>
 <head>
-<title>Online Course Management System</title>
+<title>Dorime - Enrolled Students</title>
 <link type="text/css" rel="stylesheet" href="css/enrolledStudents.css">
 </head>
 <body>
@@ -15,14 +14,13 @@
 			<div class="butto">
 				<a href="logout" class="logout">Log Out</a>
 			</div>
-			<ion-icon class="icons" name="person"></ion-icon>
-			<h2>${USERNAME}</h2>
 		</div>
 
 	</header>
 	<main>
 		<section>
-			<div class="course-title">${TITLE}</div>
+			<div class="course-title">${TITLE}</div> 
+			
 
 		</section>
 		<hr>
@@ -33,12 +31,12 @@
 					<div class="list-title">Enrolled Students</div>
 
 					<div class="container-4">
-						<c:forEach var="tempStudent" items="${ENROLLED_STUDENTS}">
+						<c:forEach var="student" items="${ENROLLED_STUDENTS}">
 							<div class="border">
 								<div class="student-info">
-									<div class="user-name2">${tempStudent.username}</div>
-									<div class="user-email">${tempStudent.email}</div>
-								
+									<div class="user-name2">${student.username}</div>
+									<div class="user-email">${student.email}</div>
+									<br>
 								</div>
 							</div>
 

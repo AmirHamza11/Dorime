@@ -7,9 +7,10 @@ public class Course {
 	private float price;
 	private String details;
 	private int course_teacher_id;
+	private String course_teacher_name;
 	
-	
-	public Course(int course_id, String title, String image_path, float price, String details, int course_teacher_id) {
+
+	public Course(int course_id, String title, String image_path, float price, String details, int course_teacher_id, String course_teacher_name) {
 		super();
 		this.course_id = course_id;
 		this.title = title;
@@ -17,7 +18,23 @@ public class Course {
 		this.price = price;
 		this.details = details;
 		this.course_teacher_id = course_teacher_id;
+		this.course_teacher_name = course_teacher_name;
 	}
+	
+	
+	public Course(String title, String image_path, float price, String details, int course_teacher_id,
+			String course_teacher_name) {
+		super();
+		this.title = title;
+		this.image_path = image_path;
+		this.price = price;
+		this.details = details;
+		this.course_teacher_id = course_teacher_id;
+		this.course_teacher_name = course_teacher_name;
+	}
+
+
+
 
 
 	public int getCourse_id() {
@@ -49,6 +66,10 @@ public class Course {
 		return course_teacher_id;
 	}
 	
+	public String getCourse_teacher_name() {
+		return course_teacher_name;
+	}
+
 	
 	
 
